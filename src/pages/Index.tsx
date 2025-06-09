@@ -35,7 +35,7 @@ const Index = () => {
             </p>
             
             {/* Search Section */}
-            <div className="max-w-2xl mx-auto mb-8">
+            <div className="max-w-4xl mx-auto mb-8">
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 relative">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -52,15 +52,11 @@ const Index = () => {
                   <Search className="mr-2 h-5 w-5" />
                   Search
                 </Button>
+                <Button onClick={handleVideoFeed} size="lg" variant="outline" className="h-14 px-8">
+                  <Video className="mr-2 h-5 w-5" />
+                  Watch Videos
+                </Button>
               </div>
-            </div>
-            
-            {/* Action Button */}
-            <div className="flex justify-center">
-              <Button onClick={handleVideoFeed} size="lg" variant="outline" className="h-14 px-8">
-                <Video className="mr-2 h-5 w-5" />
-                Watch Videos
-              </Button>
             </div>
           </div>
         </div>
