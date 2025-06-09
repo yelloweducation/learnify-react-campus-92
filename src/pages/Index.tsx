@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import Navbar from '@/components/Navbar';
@@ -55,17 +55,12 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* Action Button */}
+            <div className="flex justify-center">
               <Button onClick={handleVideoFeed} size="lg" variant="outline" className="h-14 px-8">
                 <Video className="mr-2 h-5 w-5" />
                 Watch Videos
               </Button>
-              <Link to="/register">
-                <Button size="lg" className="h-14 px-8">
-                  Get Started Free
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
